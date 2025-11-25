@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roman Viktor Dvořák - Tech Lead & Fractional CTO pro CZ/SK IoT startupy. Vedení technických týmů, mezioborový přesah HW/SW/elektro/mechanika. Systémová integrace, technické vedení, mentoring.">
+    <title>Roman Viktor Dvořák | Tech Lead & Fractional CTO</title>
+    
+    <!-- Strukturovaná data pro AI chatboty a vyhledávače -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Roman Viktor",
+      "jobTitle": "Tech Lead & Fractional CTO",
+      "description": "Tech Lead & Fractional CTO specializující se na vedení vývoje IoT projektů a systémových integrací pro malé a střední firmy v CZ/SK.",
+      "url": "https://romanviktor.cz",
+      "sameAs": [
+        "https://www.linkedin.com/in/romanviktor"
+      ],
+      "knowsAbout": [
+        "Internet of Things",
+        "Systémová integrace",
+        "Python",
+        "Hardware",
+        "Software",
+        "Elektronika",
+        "Mechanika",
+        "Technické poradenství",
+        "ERP systémy"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Fractional CTO",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Brno"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Technické poradenství pro IoT projekty",
+          "description": "Transformace technologických procesů, systémová integrace, mentoring"
+        }
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --color-bg: #fcfcf9;
+            --color-surface: #fffff d;
+            --color-text: #13343b;
+            --color-text-secondary: #626c71;
+            --color-primary: #21808d;
+            --color-primary-hover: #1d7480;
+            --color-border: rgba(94, 82, 64, 0.2);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg: #1f2121;
+                --color-surface: #262828;
+                --color-text: #f5f5f5;
+                --color-text-secondary: rgba(167, 169, 169, 0.7);
+                --color-primary: #32b8c6;
+                --color-primary-hover: #2da6b2;
+                --color-border: rgba(119, 124, 124, 0.3);
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        header {
+            margin-bottom: 48px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: var(--color-text-secondary);
+            margin-bottom: 8px;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+        }
+        
+        section {
+            margin-bottom: 48px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-secondary);
+        }
+        
+        .value-props {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .value-prop {
+            background: var(--color-surface);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+        
+        .value-prop h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .value-prop p {
+            color: var(--color-text-secondary);
+            font-size: 15px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: var(--color-surface);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+        
+        .cta-section {
+            background: var(--color-surface);
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid var(--color-border);
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            text-transform: none;
+            font-size: 24px;
+            color: var(--color-text);
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+        
+        .cta-section p {
+            color: var(--color-text-secondary);
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: var(--color-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.2s ease;
+        }
+        
+        .btn:hover {
+            background: var(--color-primary-hover);
+        }
+        
+        .btn-secondary {
+            background: var(--color-surface);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-bg);
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 48px;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+        }
+        
+        blockquote {
+            quotes: none;
+        }
+        
+        blockquote p {
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Roman Viktor Dvořák</h1>
+            <div class="subtitle">Tech Lead & Fractional CTO</div>
+            <p class="tagline">Technický leader s nohama na zemi. Znám životní cyklus IoT produktu od návrhu přes vývoj a certifikaci CE až po nasazení ERP systému pro řízení výroby. Vedu týmy vývojářů, elektrikářů i strojařů. Problémy řeším systematicky. Umím najít cestu z krize.</p>
+            
+            <div class="contact-links" style="margin-top: 32px;">
+                <a href="mailto:roman@romanviktor.cz" class="btn">Napište mi</a>
+                <a href="https://www.linkedin.com/in/romanviktor" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </header>
+        
+        <section>
+            <h2>Co nabízím</h2>
+            <div class="value-props">
+                <div class="value-prop">
+                    <h3>Technické poradenství & Mentoring</h3>
+                    <p>Praktická podpora při řešení technických výzev. Systémové analytické myšlení aplikované na vaše konkrétní problémy.</p>
+                </div>
+                
+                <div class="value-prop">
+                    <h3>Systémová integrace IoT / ERP / Cloud</h3>
+                    <p>Propojení hardware, software, výroby, logistiky a provozu do funkčního celku s důrazem na spolehlivost a škálovatelnost.</p>
+                </div>
+                
+                <div class="value-prop">
+                    <h3>Technické vedení & Troubleshooting</h3>
+                    <p>Vedení technických týmů, koordinace vývoje, řešení komplexních problémů. Zvládnutí situací, kdy standardní postupy nefungují.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Odbornost</h2>
+            <div class="skills">
+                <span class="skill-tag">IoT</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Hardware</span>
+                <span class="skill-tag">Software</span>
+                <span class="skill-tag">Elektronika</span>
+                <span class="skill-tag">Mechanika</span>
+                <span class="skill-tag">Systémová integrace</span>
+                <span class="skill-tag">ERP/ERPNext</span>
+                <span class="skill-tag">Cloud</span>
+                <span class="skill-tag">Problem solving</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Pro koho je to</h2>
+            <div class="value-props">
+                <div class="value-prop">
+                    <h3>CZ/SK tech firmy do 30 zaměstnanců</h3>
+                    <p>S fyzickým produktem, potřebou mezioborového přesahu a technického vedení bez full-time CTO.</p>
+                </div>
+                
+                <div class="value-prop">
+                    <h3>IoT projekty & systémové integrace</h3>
+                    <p>Potřebujete propojit hardware, software a výrobní procesy. Hledáte technického partnera s praktickými zkušenostmi.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="contact-links" style="margin-bottom: 48px;">
+            <a href="mailto:roman@romanviktor.cz" class="btn">Napište mi</a>
+            <a href="https://www.linkedin.com/in/romanviktor" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        
+        <section>
+            <h2>Prokazatelné výsledky</h2>
+            <div class="value-props">
+                <div class="value-prop">
+                    <h3>✓ Reorganizace a stabilizace výroby</h3>
+                    <p>Hlavní osoba odpovědná za stabilizaci výroby v krizovém období. Excelentně analytický přístup k obnově efektivního chodu.</p>
+                </div>
+                
+                <div class="value-prop">
+                    <h3>✓ Rozjezd výrobní provozovny od nuly</h3>
+                    <p>Kompletní příprava prostor, vybavení a zavedení procesů. Spuštění provozu ve velmi krátkém čase s vysokou technickou kvalitou.</p>
+                </div>
+                
+                <div class="value-prop">
+                    <h3>✓ CE certifikace IoT produktu</h3>
+                    <p>Samostatné vedení celého procesu atestace a certifikace CE od A do Z, včetně technické dokumentace a testování v akreditované laboratoři.</p>
+                </div>
+                
+                <div class="value-prop">
+                    <h3>✓ Implementace ERP systému</h3>
+                    <p>Výběr a nasazení ERP pro řízení výroby a logistiky. Přehlednost, lepší plánování a kontrola nad zásobami i výrobní kapacitou.</p>
+                </div>
+                
+                <div class="value-prop">
+                    <h3>✓ Redesign produktu</h3>
+                    <p>Kompletní přepracování s důrazem na spolehlivost, minimální poruchovost a snadnou servisovatelnost. Robustnější a efektivněji vyrobitelný výsledek.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Reference</h2>
+            <blockquote style="background: var(--color-surface); padding: 24px; border-radius: 8px; border-left: 4px solid var(--color-primary); margin: 0; font-style: italic;">
+                <p style="margin-bottom: 16px; font-size: 16px; line-height: 1.7;">„Roman je člověk s tahem na branku, výjimečnou strukturou v myšlení i práci, nadmíru vysokou spolehlivostí, obrovskou pečlivostí a velkým smyslem pro detail. Umí vést projekty od návrhu až po realizaci a udržet přehled v komplexních technických systémech."</p>
+                <footer style="font-style: normal; color: var(--color-text-secondary); font-size: 14px;">
+                    — <strong>Eva Andrle, CEO Keyguru s.r.o.</strong><br>
+                    <a href="https://github.com/rvdvorak/reference/blob/main/keyguru/keyguru-reference.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none; font-size: 13px; margin-top: 8px; display: inline-block;">
+                        Celý doporučující dopis (PDF) →
+                    </a>
+                </footer>
+            </blockquote>
+        </section>
+        
+        <section>
+            <h2>Můj příběh</h2>
+            <p class="tagline">
+                Od toxické psychózy přes insolvenci k technickému vedení. Znám cestu z krize, protože jsem jí sám prošel. 
+                <a href="https://github.com/rvdvorak/bio" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none; font-weight: 500;">
+                    Číst autobiografii →
+                </a>
+            </p>
+        </section>
+        
+        <section>
+            <h2>Kde mě najdete</h2>
+            <div class="skills">
+                <a href="https://cz.pycon.org/2023/program/talks/96/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <span class="skill-tag" style="cursor: pointer; transition: background 0.2s ease;">🎤 PyCon CZ 2023</span>
+                </a>
+                <a href="https://pyvo.cz/brno-pyvo/2022-06/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <span class="skill-tag" style="cursor: pointer; transition: background 0.2s ease;">🎤 Brněnské Pyvo</span>
+                </a>
+                <a href="https://junior.guru/stories/roman-viktor-dvorak/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <span class="skill-tag" style="cursor: pointer; transition: background 0.2s ease;">💬 junior.guru</span>
+                </a>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h2>Pojďme spolupracovat</h2>
+            <p>Řeším projekty na míru – cenu stanovím vždy po nezávazné konzultaci.<br>Plaťte za výsledek, ne za hodiny.</p>
+            <div class="contact-links">
+                <a href="mailto:roman@romanviktor.cz" class="btn">Napište mi</a>
+                <a href="https://www.linkedin.com/in/romanviktor" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Roman Viktor Dvořák | IČ: <a href="https://ares.gov.cz/ekonomicke-subjekty?ico=72056274" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none;">72056274</a> | Brno</p>
+            <p style="margin-top: 8px;">Zapsán v živnostenském rejstříku u Magistrátu města Brna</p>
+        </footer>
+    </div>
+</body>
+</html>
+
