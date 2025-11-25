@@ -47,6 +47,19 @@
       }
     }
     </script>
+    <!-- Open Graph meta tagy pro sdílení na sociálních sítích -->
+    <meta property="og:title" content="Roman Viktor Dvořák | Tech Lead & Fractional CTO">
+    <meta property="og:description" content="Tech Lead pro IoT firmy 5-25 lidí v CZ/SK. Vedení týmů, systémová integrace, preventivní architektura.">
+    <meta property="og:url" content="https://romanviktor.cz">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="cs_CZ">
+
+    <!-- Twitter Card meta tagy -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Roman Viktor Dvořák | Tech Lead & Fractional CTO">
+    <meta name="twitter:description" content="Tech Lead pro IoT firmy 5-25 lidí v CZ/SK. Vedení týmů, systémová integrace.">
+    
+
     
     <style>
         :root {
@@ -238,6 +251,24 @@
             margin: 0;
         }
         
+
+        /* Focus styles pro accessibility */
+        *:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .btn:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(33, 128, 141, 0.3);
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        
         @media (max-width: 768px) {
             h1 {
                 font-size: 32px;
@@ -265,14 +296,14 @@
             <div class="subtitle">Fractional CTO & Tech Advisor</div>
             <p class="tagline">Technický leader s nohama na zemi. Znám životní cyklus IoT produktu od návrhu přes vývoj a certifikaci CE až po nasazení ERP systému pro řízení výroby. Rozumím vývojářům, elektrikářům i strojařům. Problémy řeším systematicky. Umím najít cestu z krize.</p>
             
-            <section class="cta-section">
-                <h2>Kontakt</h2>
-                <div class="contact-links">
-                    <a href="mailto:roman@romanviktor.cz" class="btn">Napište mi</a>
-                    <a href="https://www.linkedin.com/in/romanviktor" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </div>
-            </section>
+            <div class="contact-links">
+                <a href="mailto:roman@romanviktor.cz" class="btn">Napište mi</a>
+                <a href="https://www.linkedin.com/in/romanviktor" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
         </header>
+        
+        <main>
+
         
         <section>
             <h2>Co nabízím</h2>
@@ -323,10 +354,7 @@
                     <p>Potřebujete propojit hardware, software a výrobní procesy. Hledáte technického partnera s praktickými zkušenostmi.</p>
                 </div>
             </div>
-        </section>
-        
-        <section class="cta-section">
-            <h2>Nezávazná konzultace</h2>
+
             <div class="contact-links">
                 <a href="mailto:roman@romanviktor.cz" class="btn">Napište mi</a>
                 <a href="https://www.linkedin.com/in/romanviktor" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -410,6 +438,8 @@
             </div>
         </section>
         
+        </main>
+        
         <footer>
             <p>Roman Viktor Dvořák | IČ: <a href="https://ares.gov.cz/ekonomicke-subjekty?ico=72056274" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none;">72056274</a> | Brno</p>
             <p style="margin-top: 8px;">Zapsán v živnostenském rejstříku u Magistrátu města Brna</p>
@@ -417,4 +447,3 @@
     </div>
 </body>
 </html>
-
